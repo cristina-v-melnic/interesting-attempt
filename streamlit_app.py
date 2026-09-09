@@ -10,7 +10,7 @@ st.write("The change syncs instantly to localhost.")
 
 
 with st.expander("**Exercise 1** Guess my favourite!"):
-    st.write("Please create:")"
+    st.write("Please create:")
     st.checkbox("A list of comparable things you like ex. movies, books, songs, artists, foods, ice-creams etc.", key="1.1")
     st.checkbox("A selection interface, i.e. drop-down", key="1.2")
     st.checkbox("User clicks on a submit button.", key="1.3")

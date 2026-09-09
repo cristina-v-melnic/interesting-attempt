@@ -17,3 +17,17 @@ with st.expander("**Exercise 1** Guess my favourite!"):
     st.checkbox("Feedback pop-up on whether the user guessed it or not.", key="1.4")
     st.checkbox("Give your riddle a header with and a short description.", key="1.5")
     st.info("Useful commands: st.header(), st.write(), st.selectbox(), st.select_slider(), st.radio(), st.button(), st.success(), st.error(), st.info(), st.balloons()")
+
+
+favourite_things = ["Shakira", "Charlie Chaplin", "Jung Kook",
+                    "Lady Gaga", "Michael Jackson"]
+ 
+guess = st.selectbox("Which dancer so you think is my No1 inspiration?", options=favourite_things, index=None)
+submitted = st.button("Submit!")
+ 
+if (guess and submitted):
+    if guess=="Jung Kook":
+        st.success("That's correct!")
+        st.balloons()
+    else:
+        st.error("Sadly not. Try again!")
